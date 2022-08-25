@@ -1,0 +1,190 @@
+
+*{
+    box-sizing: border-box;
+}
+
+body {
+     background: #ece9e6;
+     background: linear-gradient( to right, #ffffff, #ada7a1 );
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    min-height: 100vh;
+}
+
+img{
+    max-width: 100% ;
+}
+
+ .mobile-container {
+    background-color: #fff; 
+    width: 400px;
+    border-radius: 10px;
+    
+ }
+
+ header {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     padding: 1rem;
+ }
+ 
+
+ header input {
+     background-color: #eee;
+     border: none;
+     border-radius: 3px;
+     padding: 0.5rem 1rem;
+ }
+
+ header button {
+    border-color: rgb(125, 145, 92);
+    border-radius:  5px 5px ;
+    margin-left: 1rem;     
+ }
+
+  .fav-container {  
+       background-color: coral;;
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .fav-meals {
+     
+      display: flex;
+      list-style-type: none;
+      padding: 0.25rem 1rem;
+      font-size: 0.8rem;
+  }
+
+  .fav-meals li {
+    position: relative;
+    margin: 0 10px;
+    width: 60px;
+  }
+  .fav-meals li .clear {
+    background-color: transparent;
+    border: none;
+    opacity: 0;
+    position: absolute;
+    top: -0.9rem;
+    right: 0;
+    font-size: 1.2rem;
+  }
+  .fav-meals li:hover .clear {
+     opacity: 1;
+  }
+
+  .fav-meals li img {
+    border-radius: 30%;
+    object-fit: cover;
+      height: 60px;
+      width: 60px;
+  }
+
+
+  .fav-meals li img span {
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+  }
+  
+ .meal {
+      
+   border-radius: 3px;
+   margin: 1.5rem;
+    overflow: hidden;
+ }
+
+ 
+ .meal-header {
+   position: relative;
+ }
+ 
+ .meal-header .random {
+   position: absolute;
+   top: 1rem;
+   background-color: #fff;
+   padding: 0.5rem 0.5rem;
+   font-size: 0.7rem;
+   border-top-right-radius: 3px;
+   border-bottom-right-radius: 3px;
+ }
+ 
+ .meal-header img{
+   object-fit: cover; 
+  height: 250px;
+   width: 100%;
+
+ }
+
+  .meal-body {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+  }
+
+  .meal-body h4 {
+    margin: 0;
+  }
+
+   .meal-body .fav-btn {
+     background-color: transparent;
+     color: grey;
+     font-size: 1.2rem
+   }
+
+
+
+  .meal-body .fav-btn.active {
+      color: rebeccapurple;
+  }
+
+  .popup-container {
+    background-color: rgba(0,0,0,0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+  }
+   .popup-container.hidden {
+     opacity: 0;
+     pointer-events: none;
+   }
+  .popup {
+    position: relative;
+    overflow: auto;
+    background-color: #fff;
+    border-radius: 5px;
+    max-width: 400px;
+    width: 100%;
+    max-height: 100vh;
+    padding: 0.2rem;
+  }
+
+
+  .popup  h1{
+    text-align: center;
+  }
+
+  .popup .close-popup {
+       background-color: transparent;
+      font-size: 1.5rem;
+      border: none;
+         position: absolute; 
+         top: 1rem;
+         right: 1rem;
+  }
+
+
